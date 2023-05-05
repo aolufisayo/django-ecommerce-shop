@@ -1,1 +1,1 @@
-web:python manage.py migrate && gunicorn GreatKart.wsgi
+web: python manage.py migrate && gunicorn GreatKart.wsgi
