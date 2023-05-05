@@ -77,9 +77,19 @@ AUTH_USER_MODEL = "account.Account"
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+load_dotenv(find_dotenv())
 DATABASES = {
-    'default': dj_database_url.config(default='sqlite://db.sqlite3', conn_max_age=600, ssl_require=False)
+    'default': dj_database_url.config(
+        default='sqlite:////{0}'.format(os.path.join(BASE_DIR, 'db.sqlite3'))
+    )
 }
+
+""" DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+} """
 
 
 # Password validation
