@@ -160,6 +160,6 @@ MESSAGE_TAGS = {
 # SMTP Configuration
 EMAIL_HOST = 'smtp-mail.outlook.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'phissycodes@hotmail.com'
-EMAIL_HOST_PASSWORD = 'wNtxpZ7fWCkZfF'
+EMAIL_HOST_USER = 'xxxxxxx'
+EMAIL_HOST_PASSWORD = 'xxxxxxx'
 EMAIL_USE_TLS = True
