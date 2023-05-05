@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'GreatKart.wsgi.app'
+WSGI_APPLICATION = 'GreatKart.wsgi.application'
 
 
 # custom user model
