@@ -13,18 +13,19 @@
             "src": "build_files.sh",
             "use": "@vercel/static-build",
             "config": {
-                "distDir": "GreatKart/static"
+                "distDir": "static"
             }
         }
     ],
     "routes": [
         {
             "src": "/static/(.*)",
-            "dest": "GreatKart/static/$1"
+            "dest": "static/$1"
         },
         {
             "src": "/(.*)",
             "dest": "GreatKart/wsgi.py"
         }
-    ]
+    ],
+    "outputDirectory": "static"
 }
